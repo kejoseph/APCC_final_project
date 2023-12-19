@@ -4,6 +4,8 @@
 This tool is designed to facilitate the selection of plasmids, creation of sequences, design of primers for Gibson Assembly cloning. It takes a desired sequence to be inserted into a plasmid/vector, allows user to select the plasmid an insert sequence, and returns the forward and reverse primers for the Gibson Assembly.
 
 Source code can be obtained here: https://github.com/kejoseph/APCC_final_project
+If on the JHU BIX server, tool can be run through: http://bfx3.aap.jhu.edu/kjosep25/final/main.html
+
 
 Utilizes data from Sistrom, Mark (2018). Plasmids database [Dataset]. Dryad. https://doi.org/10.15146/R33X2J
 - Also available in the All_plasmids.fna file.
