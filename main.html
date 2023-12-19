@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Gibson Cloning Design Tool</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body id="main">
+
+        <h1>Gibson Assembly (Cloning) Design Tool</h1>
+        <form id="cloningForm">
+            <label for="geneSequence">Gene Insert Sequence:</label>
+            <textarea id="geneSequence" name="geneSequence" rows="4" cols="50" placeholder="Enter gene sequence..."></textarea>
+
+            <label for="plasmidSearch">Select a Plasmid/Vector:</label>
+            <input type="text" id="plasmidSearch" name="plasmidSearchBox" placeholder="Search for plasmid..." autofocus="autofocus">
+            <input type="submit" value="Submit">
+        </form>
+
+    <!-- Add a new div for displaying the enzymes -->
+    <div id="enzymes">
+        <p id="enzymeList"></p>
+
+        <!-- Add a new div for displaying the enzyme dropdown -->
+    <div id="enzymeDropdownSection" style="display: none;">
+        <label for="enzymeDropdown">Select a Restriction Enzyme:</label>
+        <select id="enzymeDropdown"></select>
+    </div>
+
+    <!-- Add a "Processing" message to your HTML file -->
+    <div id="processingMessage" style="display: none;">
+        <p>Processing...</p>
+    </div>
+
+    <!-- Add a button to allow the user to copy the final sequence to the clipboard or export it to a CSV file -->
+    <div id="finalSeq" style="display: none;">
+        <h2>Final Sequence</h2>
+    </div>
+
+    <!-- Add text to the left of the buttons in your HTML file -->
+    <div id="buttonSection">
+        <div style="display: inline-block;">
+            <p style="display: inline;">Final Sequence:</p>
+        </div>
+        <button id="copyToClipboardBtn">Copy to Clipboard</button>
+        <button id="exportToTxtBtn">Export to TXT</button>
+    </div>
+
+        <!-- Add new elements to display the forward and reverse primers -->
+    <div id="primersSection">
+        <h1>Primers to Order:</h1>
+        <p id="fwdPrimer">Forward Primer Sequence: </p>
+        <p id="revPrimer">Reverse Primer Sequence: </p>
+    </div>
+</body>
+
+</html>
